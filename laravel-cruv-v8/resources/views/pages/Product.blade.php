@@ -15,6 +15,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{$product->name}}</h5>
                             <p class="card-text">{{$product->description}}</p>
+                            <small class="card-text p-2">{{$product->category}}</small>
                             <form action="" method="post"></form>
                             <form action="/products/{{$product->id}}" method="post">
                                 @csrf
