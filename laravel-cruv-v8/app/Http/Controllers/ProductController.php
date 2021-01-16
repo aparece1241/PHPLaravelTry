@@ -121,4 +121,19 @@ class ProductController extends Controller
 
         return redirect('/products');
     }
+
+
+    // api routes
+    public function getAllProducts()
+    {
+        //get all products
+        $products = Product::all();
+
+        return $products;
+    }
+
+    public function addProduct(Request $request)
+    {
+        
+    }
 }
